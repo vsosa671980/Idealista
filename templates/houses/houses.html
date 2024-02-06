@@ -1,0 +1,147 @@
+
+
+{% extends 'layout/base.html' %}
+
+{% load static %}
+
+{% block 'content' %}
+
+<div class="container">
+
+
+  
+<form  method="POST" id="form">
+
+   {% csrf_token %}
+ <div class="container_selections">
+  <!--Provincias-->
+  <div class=container_features>
+    <h2>Selecciona provincia</h2>
+    
+    <select id="provincia" name="provincia">
+      {% for city in cities%}
+        <option value="{{city}}">{{city}}</option>      
+        {% endfor%}
+    </select>
+  </div>
+
+  <!--Municipios-->
+  <div class=container_features>
+    <h2>Municipio</h2>
+   
+    <select id="loc" name="location">
+      {% for location in locations%}
+        <option value="{{location}}">{{location}}</option>      
+        {% endfor%}
+    </select>
+  </div>
+
+  <div>
+    <input type="submit" value="Buscar" id="foundButton" class=buttonSubmit>
+  </div>
+
+</div>
+
+  <div class="container_general">   
+    <div class="container_check">
+    <div>
+      <h2 class="title_feature">Tipo Vivienda</h2>
+    </div class="container_checkbox">
+      {% for house_type,house_type_value in house_types.items %}
+      {# Asumiendo que cada tipo de vivienda está en minúsculas y sin espacios #}   
+          <input type="checkbox" id="{{ house_type}}" name="house_type" value="{{ house_type }}" class="checkboxType">
+          <label for="{{ house_type }}">{{ house_type_value.capitalize }}</label><br>
+      {% endfor %}
+    </div>
+
+    <div class="container_check">
+      <h2 class="title_feature" >Caracteristicas</h2>
+     
+      {% for house_feature,house_feature_value in house_features.items %}
+      {# Asumiendo que cada tipo de vivienda está en minúsculas y sin espacios #}    
+          <input type="checkbox" id="{{ house_feature}}" name=" house_feature " value="{{house_feature}}">
+          <label for="{{ house_features }}">{{house_feature_value.capitalize}}</label><br>
+      {% endfor %}
+    </div>
+    <div class="container_check">
+      <h2 class="title_feature">Estado</h2>
+      {% for house_status,house_status_value in houses_status.items%}
+      {# Asumiendo que cada tipo de vivienda está en minúsculas y sin espacios #}
+      
+          <input type="checkbox" id="{{ house_status}}" name="{{ house_status }}" value="{{house_status}}">
+          <label for="{{ house_status }}">{{ house_status_value.capitalize }}</label><br>
+      {% endfor %}
+    </div>
+  </div>
+</form>
+</div>
+ 
+<div class="container_houses">
+  <h1>Listado de Casas</h1>
+  <p><img src="../../static/images/casa.png" class="house_list">
+  <table class="container_table">
+      <thead>
+          <tr id="trTable">
+              <!--<th>Casa</th>
+              <th>Link</th>
+              <th>Precio actual</th>
+              <th>Precio Calculado</th>
+              <th>Diferencia</th>
+              <th>Resultado</th> -->
+              
+          </tr>
+      </thead>
+      <tbody id="tbody">
+        <!--Javascript for create houses list-->
+      </tbody>
+  </table>
+</div>
+
+<div  >
+  <div class="container_pagination oculto" id="container_pagination">
+        <span >
+            <a  id="first_page_a" class="links_pagination" >&laquo; Primera</a>      
+        </span>  
+        <span >
+          <p id="numberPages" class="links_pagination" ></p>
+        </span>
+        <span class="step-links" id="spanPreviousPage">
+            <a  id="previous_page_a" class="links_pagination"  >Anterior</a>
+        </span>
+      <span class="step-links">
+        <a  id="next_page_a" class="links_pagination"   >Siguiente</a>
+      </span>
+        <span class="current" id="pagenumber" >
+          <p id="numberPages" class="links_pagination" ></p>
+        </span>
+        <span class="step-links">
+            <a  id="last_page_a" class="links_pagination"  >Última &raquo;</a>
+        </span>
+</div>
+</div>
+
+
+<div class="container_grafic">
+  <div class="container_grafic_input">
+      <h2>Grafico Analisis de Precios</h2>
+      <div>
+        <input type="submit" value="Visualizar Grafica" id="graficButton" class=buttonSubmit>
+      </div>
+    </div>
+  <div id="grafic_image" class="hidden">
+    <img src="data:image/png;base64,{{ grafic }}" alt="Gráfico">
+  </div>
+
+<div>
+
+
+</div>
+
+
+{% endblock %}
+
+{% block 'scripts' %}
+
+
+<script src="{% static 'javascript/house.js' %}"></script>
+{% endblock  %}

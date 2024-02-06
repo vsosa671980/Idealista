@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real Estate Price Prediction Results</title>
+</head>
+<body>
+
+<h1>Real Estate Price Prediction</h1>
+
+{% if model_evaluation_results %}
+    <table>
+        <tr>
+            <th>Model</th>
+            <th>Mean Squared Error (MSE)</th>
+        </tr>
+        {% for model_name, mse in model_evaluation_results.items %}
+            <tr>
+                <td>{{ model_name }}</td>
+                <td>{{ mse }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <h2>Make a Prediction</h2>
+    <form method="post" action="{% url 'predict_real_estate_prices' %}">
+        {% csrf_token %}
+        
+        <label for="atico">Ático:</label>
+        <select name="atico" required>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+        
+        #TODO: que tipos hay????
+        <label for="tipo_construccion">Tipo Construcción:</label>
+        <select name="tipo_construccion" required>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+        
+        <label for="latitude">Latitude:</label>
+        <input type="text" name="latitude" required><br>
+
+        <label for="longitude">Longitude:</label>
+        <input type="text" name="longitude" required><br>
+
+        <label for="roomNumber">Room Number:</label>
+        <input type="text" name="roomNumber" required><br>
+        
+        <label for="bathNumber">Bath Number:</label>
+        <input type="text" name="bathNumber" required><br>
+        
+        <label for="hasParking">Has Parking:</label>
+        <select name="hasParking" required>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+
+        <label for="hasGarden">Has Garden:</label>
+        <select name="hasGarden" required>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+
+        <label for="hasSwimmingPool">Has Swimming Pool:</label>
+        <select name="hasSwimmingPool" required>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+
+        <label for="hasTerrace">Has Terrace:</label>
+        <select name="hasTerrace" required>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+
+        <label for="superficie_min">Superficie Min:</label>
+        <input type="text" name="superficie_min" required><br>
+
+        <label for="armarios_empotrados">Has Terrace:</label>
+        <select name="armarios_empotrados" required>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+
+        <label for="trastero">Trastero:</label>
+        <select name="trastero" required>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+
+        <label for="parcela">Parcela:</label>
+        <input type="text" name="parcela" required><br>
+
+        <label for="balcon">Balcón:</label>
+        <select name="balcon" required>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+
+        <label for="altura">Altura:</label>
+        <input type="text" name="altura" required><br>
+        #TODO: ACTUALIZAR APARTIR DE AQUI TODAS LAS OPCIONES DE UBICACION
+        <label for="ubicacion_1">Ubicacion 1:</label>
+        <select name="ubicacion_1" required>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+
+        <label for="ubicacion_2">Ubicacion 2:</label>
+        <input type="text" name="ubicacion_2" required><br>
+
+        <label for="ubicacion_3">Ubicacion 3:</label>
+        <input type="text" name="ubicacion_3" required><br>
+
+        <label for="isNewDevelopment">Is New Development:</label>
+        <select name="isNewDevelopment" required>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+
+        <label for="isNeedsRenovating">Is Needs Renovating:</label>
+        <select name="isNeedsRenovating" required>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+
+        <label for="isGoodCondition">Is Good Condition:</label>
+        <select name="isGoodCondition" required>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+
+        <input type="submit" value="Predict">
+    </form>
+{% else %}
+    <p>No results to display.</p>
+{% endif %}
+
+</body>
+</html>

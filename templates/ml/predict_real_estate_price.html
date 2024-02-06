@@ -1,0 +1,81 @@
+{% extends 'layout/base.html' %}
+
+{% block 'title' %} Let´s see the price of your house {% endblock %}
+
+{% block 'content' %}
+    <div style="max-width: 400px; margin: auto;">
+        <h1 style="text-align: center;">Real Estate Price Prediction</h1>
+        <form method="post" action="" style="display: grid; grid-gap: 10px;">
+            {% csrf_token %}
+            <div style="display: grid; grid-template-columns: min-content 1fr; grid-gap: 10px; white-space: nowrap;">
+                <label for="{{ form.atico.id_for_label }}">Atico:</label>
+                {{ form.atico }}
+                <label for="{{ form.roomNumber.id_for_label }}">Room Number:</label>
+                {{ form.roomNumber }}
+                <label for="{{ form.bathNumber.id_for_label }}">Bath Number:</label>
+                {{ form.bathNumber }}
+                <label for="{{ form.hasParking.id_for_label }}">Has Parking:</label>
+                {{ form.hasParking }}
+                <label for="{{ form.hasGarden.id_for_label }}">Has Garden:</label>
+                {{ form.hasGarden }}
+                <label for="{{ form.hasSwimmingPool.id_for_label }}">Has Swimming Pool:</label>
+                {{ form.hasSwimmingPool }}
+                <label for="{{ form.hasTerrace.id_for_label }}">Has Terrace:</label>
+                {{ form.hasTerrace }}
+                <label for="{{ form.superficie_min.id_for_label }}">Superficie Min:</label>
+                {{ form.superficie_min }}
+                <label for="{{ form.armarios_empotrados.id_for_label }}">Armarios Empotrados:</label>
+                {{ form.armarios_empotrados }}
+                <label for="{{ form.trastero.id_for_label }}">Trastero:</label>
+                {{ form.trastero }}
+                <label for="{{ form.parcela.id_for_label }}">Parcela:</label>
+                {{ form.parcela }}
+                <label for="{{ form.balcon.id_for_label }}">Balcon:</label>
+                {{ form.balcon }}
+                <label for="{{ form.altura.id_for_label }}">Altura:</label>
+                {{ form.altura }}
+
+                <label for="{{ form.ubicacion_1.id_for_label }}">Ubicacion 1:</label>
+                <select name="{{ form.ubicacion_1.name }}" id="{{ form.ubicacion_1.id_for_label }}">
+                    <option value="gran_canaria">Gran Canaria</option>
+                </select>
+
+                <label for="{{ form.ubicacion_2.id_for_label }}">Ubicacion 2:</label>
+                <select name="{{ form.ubicacion_2.name }}" id="{{ form.ubicacion_2.id_for_label }}">
+                    <option value="agaete">Agaete</option>
+                    <option value="aguimes">Agüimes</option>
+                    <option value="aldea_san_nicolas">Aldea de San Nicolás</option>
+                    <option value="artenara">Artenara</option>
+                    <option value="arucas">Arucas</option>
+                    <option value="firgas">Firgas</option>
+                    <option value="galdar">Gáldar</option>
+                    <option value="ingenio">Ingenio</option>
+                    <option value="las_palmas_de_gran_canaria">Las Palmas de Gran Canaria</option>
+                    <option value="mogan">Mogán</option>
+                    <option value="moya">Moya</option>
+                    <option value="san_bartolome_de_tirajana">San Bartolomé de Tirajana</option>
+                    <option value="santa_brigida">Santa Brigida</option>
+                    <option value="santa_lucia_de_tirajana">Santa Lucía de Tirajana</option>
+                    <option value="santa_maria_de_guia_de_gran_canaria">Santa Maria de Guia de Gran Canaria</option>
+                    <option value="tejeda">Tejeda</option>
+                    <option value="telde">Telde</option>
+                    <option value="teror">Teror</option>
+                    <option value="valleseco">Valleseco</option>
+                    <option value="valsequillo_de_gran_canaria">Valsequillo de Gran Canaria</option>
+                    <option value="vega_de_san_mateo">Vega de San Mateo</option>
+                </select>
+
+                <label for="{{ form.isNewDevelopment.id_for_label }}">Is New Development:</label>
+                {{ form.isNewDevelopment }}
+                <label for="{{ form.isNeedsRenovating.id_for_label }}">Is Needs Renovating:</label>
+                {{ form.isNeedsRenovating }}
+                <label for="{{ form.isGoodCondition.id_for_label }}">Is Good Condition:</label>
+                {{ form.isGoodCondition }}
+            </div>
+            <button type="submit" style="grid-column: span 2;">Predict Price</button>
+        </form>
+        {% if prediction is not None %}
+            <h2 style="text-align: center;">Prediction: ${{ prediction }}</h2>
+        {% endif %}
+    </div>
+{% endblock %}

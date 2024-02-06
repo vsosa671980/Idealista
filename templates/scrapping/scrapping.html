@@ -1,0 +1,178 @@
+
+{% extends 'layout/base.html' %}
+{% load static %}
+{% block content %} Scrapping {% endblock %}
+
+{% block 'content' %}
+
+<style>
+    
+    button {
+        padding: 10px;
+        margin: 10px;
+    }
+
+
+    select {
+        padding: 5px;
+        margin: 10px;
+    }
+
+    label {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    #miGif {
+            
+            width: 200px; /* Cambia el tamaño según tus necesidades */
+            opacity: 0.7; /* Cambia la transparencia según tus necesidades */
+            margin: auto;
+        }
+
+    img[id^="miGif_"] {
+            width: 40px; /* Cambia el tamaño según tus necesidades */
+            opacity: 0.7; /* Cambia la transparencia según tus necesidades */
+            margin: auto;
+        }
+    
+    #loading-spinner {
+        text-align: center; /* Centrar horizontalmente */
+        height: 100vh; /* Centrar verticalmente */
+    }
+
+    /* Estilos para el modal */
+    #modal {
+        text-align: center;
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        margin: auto;
+    }
+
+</style>
+
+<h1>Scrapping</h1>
+
+<div id="loading-spinner" style="display: none;">
+    <img id="miGif" src="" alt="GIF oculto" style="display: none;">
+</div>
+
+<div id="modal">
+    <p>Warning! If you leave the page, the process will stop.</p>
+    <button id= "downloading-button" type="button" onclick="no_show_warning()">OK</button>
+</div>
+
+{% if downloading %}
+    <form method="post" action="{% url 'scrapping_all' %}" >
+        {% csrf_token %}
+        <button id="button_all" type="submit" onclick="start_all_downloading(this)">Download ALL URLs</button>
+        <img id="miGif_all" src="" alt="GIF oculto" style="display: none;">
+    </form>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <td><strong> Index </strong></td>
+                <td><strong> URL </strong></td>
+                <td><strong> Houses </strong></td>
+                <td><strong> Status </strong></td>
+                <td></td>
+                
+            </tr>
+        </thead>
+        <tbody>
+            
+            {% for key, value in data %}
+                <tr>
+                    <td><strong>{{ key }}</strong></td>
+                    <td>{{ value.url }}</td>
+                    <td>{{ value.houses }}</td>
+                    <td>{{ value.status }}</td>
+                    <td>
+                        {% if value.status == 'OK' %}
+                        <p></p>
+                        {% else %}
+                            <form method="post" action="{% url 'scrapping_process' id=key %}" id="single_downloading_form">
+                                {% csrf_token %}
+                                <button id="miButton_{{ key }}" type="submit" onclick="start_single_downloading(this,{{ key }})">Download</button>
+                                <img id="miGif_{{ key }}" src="" alt="GIF oculto" style="display: none;">
+                            </form>
+                        {% endif %}
+                    </td>
+                    
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <form method="post" action="{% url 'scrapping' %}" class="vertical-form" id="scrapping_option_form">
+        {% csrf_token %}
+        {{ option_form }}
+        <button type="button" onclick="start_downloading(this)">Download Zones URLs</button>
+        
+    </form>
+
+{% endif %}
+        
+<script>
+    var downloading_started = false;
+    var all_downloading_started = false;
+    
+    function start_downloading(button) {
+        if (!downloading_started) {
+            button.disabled =true;
+            downloading_started = true;
+            document.getElementById("miGif").src = "{% static 'images/downloading.gif' %}";
+            document.getElementById("miGif").style.display = "block";
+            document.getElementById('loading-spinner').style.display = 'block';
+            show_warning()
+        }
+    }
+
+    function show_warning() {
+        if (downloading_started){
+            document.getElementById('scrapping_option_form').submit();
+            document.getElementById('modal').style.display = 'block';
+        }
+    }
+
+    function no_show_warning() {
+        document.getElementById('modal').style.display = 'none';
+    }
+
+ 
+    // Asigna la función al evento beforeunload
+    window.onbeforeunload = show_warning;
+
+    function start_single_downloading(button,index) {
+        var miGidDelGif = "miGif_" + index;
+        var miboton = "miButton_" + index;
+        document.getElementById(miGidDelGif).src = "{% static 'images/downloading.gif' %}";
+        document.getElementById(miGidDelGif).style.display = "block";
+        document.getElementById(miboton).style.display = "none";
+        return confirm('Warning! If you leave the page, the process will stop.The proccess could take several minutes')
+        document.getElementById('single_downloading_form').submit();
+        }
+    
+    function start_all_downloading(button) {
+        document.getElementById("miGif_all").src = "{% static 'images/downloading.gif' %}";
+        document.getElementById("miGif_all").style.display = "block";
+        document.getElementById("button_all").style.display = "none";
+        return confirm('Warning! If you leave the page, the process will stop. The proccess could take several hours')
+        document.getElementById('single_downloading_form').submit();
+        }
+</script>
+
+  
+
+
+
+    
+
+{% endblock %}

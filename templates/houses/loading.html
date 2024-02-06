@@ -1,0 +1,28 @@
+
+{% extends 'layout/base.html' %}
+
+{% load static %}
+
+{% block 'content' %}
+
+<div class="container_grafic">
+    <h1>Cargando Datos</h1>
+    <h1>Calculando precios</h1>
+    <img src="../../static/images/rueda.svg" class="img_loader">
+
+</div>
+
+
+{% endblock %}
+
+{% block 'scripts' %}
+
+<script>
+    window.onload = function(){
+        window.location.href = "{% url 'pagination_default' %}"
+    }
+</script>
+
+
+
+{% endblock  %}

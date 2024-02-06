@@ -1,0 +1,129 @@
+
+{% extends 'layout/base.html' %}
+
+{% load static %}
+
+{% block 'content' %}
+
+<div class="container">
+
+<form  method="POST" id="form">
+
+   {% csrf_token %}
+ <div class="container_selections">
+  <!--Provincias-->
+  <div class=container_features>
+    <h2>Selecciona provincia</h2>
+    
+    <select id="provincia" name="provincia">
+      {% for city in cities%}
+        <option value="{{city}}">{{city}}</option>      
+        {% endfor%}
+    </select>
+  </div>
+
+  <!--Municipios-->
+  <div class=container_features>
+    <h2>Municipio</h2>
+   
+    <select id="location" name="location">
+      {% for location in locations%}
+        <option value="{{location}}">{{location}}</option>      
+        {% endfor%}
+    </select>
+  </div>
+
+  <div>
+    <input type="submit" value="Buscar">
+  </div>
+</div>
+
+  <div class="container_general">   
+    <div class="container_check">
+    <div>
+      <h2 class="title_feature">Tipo Vivienda</h2>
+    </div>
+      {% for house_type in house_types %}
+      {# Asumiendo que cada tipo de vivienda está en minúsculas y sin espacios #}
+      
+          <input type="checkbox" id="{{ house_type}}" name="house_type" value="{{ house_type }}">
+          <label for="{{ house_type }}">{{ house_type.capitalize }}</label><br>
+      {% endfor %}
+       
+    </div>
+
+    <div class="container_check">
+      <h2 class="title_feature" >Caracteristicas</h2>
+     
+      {% for house_feature in house_features %}
+      {# Asumiendo que cada tipo de vivienda está en minúsculas y sin espacios #}    
+          <input type="checkbox" id="{{ house_feature}}" name="{{ house_feature }}">
+          <label for="{{ house_features }}">{{ house_feature.capitalize }}</label><br>
+      {% endfor %}
+    </div>
+    <div class="container_check">
+      <h2 class="title_feature">Estado</h2>
+      {% for house_status in houses_status%}
+      {# Asumiendo que cada tipo de vivienda está en minúsculas y sin espacios #}
+      
+          <input type="checkbox" id="{{ house_status}}" name="{{ house_status }}">
+          <label for="{{ house_status }}">{{ house_status.capitalize }}</label><br>
+      {% endfor %}
+    </div>
+  </div>
+</form>
+</div>
+ 
+  <div class="container_pagination">
+    <h1>List Houses</h1>
+
+    <table class="container_table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>zone Url</th>
+                <th>Last price</th>
+                <th>Price Predicted</th>
+                <th>Diferene<th>
+            <tr>
+        </thead>
+        <tbody>
+        
+        {% for house in houses %}
+        <tr>
+            <td>{{house.title.capitalize}}</td>
+            <td>{{house.zone_url}}</td>
+            <td>{{house.last_price}}</td>
+            <td>1000</td>
+            <td>2000</td>          
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <div class="pagination">
+        <span class="step-links">
+          {% if houses.has_previous %}
+            <a href="?page=1">&laquo; first</a>
+            <a href="?page={{ houses.previous_page_number }}">previous</a>
+          {% endif %}
+    
+          <span class="current">
+            Página {{ houses.number }} de {{ houses.paginator.num_pages }}.
+          </span>
+    
+          {% if houses.has_next %}
+            <a href="?page={{ houses.next_page_number }}">next</a>
+            <a href="?page={{ houses.paginator.num_pages }}">last &raquo;</a>
+          {% endif %}
+        </span>
+      </div>
+</div>
+
+{% endblock %}
+
+{% block 'scripts' %}
+<script src="{% static 'javascript/house.js' %}"></script>
+{% endblock  %}

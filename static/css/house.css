@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200;1,400;1,500&family=Nunito:ital,wght@1,200;1,300&family=Righteous&display=swap');
+*{
+font-family: 'Montserrat', sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.oculto{
+    display:none;
+}
+.container_general{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+}
+
+a{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container_general_
+
+.container{
+    width: 100%;
+}
+
+.container_selections{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+select{
+    height: 30px;
+}
+select:hover{
+    border-color: #555;
+}
+
+select:focus {
+    outline: none;
+    border-color: #2196F3; /* Color azul */
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(33, 150, 243, 0.7); /* Sombra azul suave */
+    outline-width: 10px
+}
+
+.container_features{
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+
+.title_feature{
+    margin: 10px;
+}
+
+
+.container_houses{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container_table{
+ 
+    width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+}
+
+th, td {
+    max-height: 5px;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.buttonSubmit{
+    padding:12px;
+    background-color: #2EA3F2;
+    color: white;
+    border-radius: 9px 9px;
+    border-color: white;
+}
+
+.houseImg{
+    width: 20px;
+
+}
+
+.houseImg:hover{
+    width: 22px;
+    overflow: hidden;
+
+}
+
+.house_list{
+    width: 80px;
+}
+
+.checkbox{
+     /* Contenido que se mostrará antes del texto (puedes cambiarlo) */
+
+
+}
+.container_checkbox{
+    display: inline;
+    position: relative;
+    background-color: black;
+
+}
+
+.container_pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    padding: 30px;
+}
+
+.step-links{
+    margin: 10px;
+    color: red;
+    border: solid 1px #666;
+    border-radius: 9px;
+    padding: 2px;
+}
+
+
+.step-links:hover{
+    background-color: #2ea3f2;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+.links_pagination{
+    padding: 4px;
+}
+
+.links_pagination:hover{
+   
+}
+
+.td_arrow{
+    text-align: center;
+}
+.imgArrow{
+    height: 30px;
+}
+
+.imgDownload{
+    height: 30px;
+    cursor: pointer;
+}
+
+
+.container_grafic{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    
+}
+
+.container_grafic_input{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.img_loader{
+    width: 150px;
+}

@@ -1,0 +1,15 @@
+<nav>
+    <ul>
+        <li><a href="{% url 'index' %}">Inicio</a></li>
+        
+        <li><a href="{% url 'scrapping' %}">Actualizacion Datos</a></li> 
+        {% if page_param %}
+  <!-- Si hay un parámetro 'page', enlaza a la ruta con parámetro -->
+       
+       {% else %}
+  <!-- Si no hay un parámetro 'page', enlaza a la ruta por defecto -->
+          <li><a href="{% url 'loading' %}">Listado Viviendas</a></li>
+      {% endif %}
+      
+    </ul>
+</nav>
