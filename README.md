@@ -3,7 +3,7 @@
 ## Máster de Programación Avanzada en Python para Big Data, Hacking y Machine Learning .
 
 
-![Portada](/imgproject\Portada.png)
+![Portada](imgproject\Portada.png)
 
 Ante la variación de los precios de venta y alquiler de inmuebles, y gracias a la existencia de portales inmobiliarios, podemos observar tendencias o aproximaciones de los precios de dichos inmuebles, que no llegan a ser más que conjeturas basadas en la observación, desde el punto de vista de un particular. En el caso de profesionales, parten de grandes bases de datos, y costosos estudios de mercado, que llevan en su mayoría un laborioso trabajo que implican grandes cantidades de dinero y tiempo.
 
