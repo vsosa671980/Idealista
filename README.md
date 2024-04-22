@@ -61,7 +61,7 @@ Relacional Sql-lite
 # Imagenes de la aplicacion
 ### Pantalla Inicio
 
-![Portada](imgproject\Portada.png)
+![Portada](imgproject/Portada.png)
 
 ### Descarga de datos 
 
