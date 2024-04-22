@@ -65,16 +65,16 @@ Relacional Sql-lite
 
 ### Descarga de datos 
 
-![Portada](imgproject\scrapping.png)
+![Portada](imgproject/scrapping.png)
 
 ### Carga de datos
 
-![Portada](imgproject\descarga.png)
+![Portada](imgproject/descarga.png)
 
 ### Listado de Casas
 
-![Portada](imgproject\listado.png)
+![Portada](imgproject/listado.png)
 
 ### Grafico de desviacion precios predichos y precio real
 
-![Portada](imgproject\graficos.png)
+![Portada](imgproject/graficos.png)
