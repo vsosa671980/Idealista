@@ -1,7 +1,7 @@
 # Análisis Inmobiliario mediante Web Scraping y Machine Learning
 
-## Máster de Programación Avanzada en Python para Big Data, Hacking y Machine Learning (IX Edición).
-### Trabajo Fin de Master
+## Máster de Programación Avanzada en Python para Big Data, Hacking y Machine Learning .
+
 
 ![Portada](imgproject\Portada.png)
 
