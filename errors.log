@@ -856,3 +856,1786 @@ Traceback (most recent call last):
     price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:40:28,014 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:40:28,597 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:40:30,985 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:40:32,926 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:40:32,926 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:40:32,927 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:40:32,929 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:40:35,184 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:40:35,185 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:40:35,186 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:40:35,188 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:40:37,621 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:40:37,622 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:40:37,623 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:40:37,624 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:40:39,691 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:40:40,548 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:40:40,549 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:40:40,550 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:40:40,551 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:40:41,759 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:40:43,938 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:40:43,939 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:40:43,939 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:40:43,941 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:40:44,123 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:40:44,124 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:40:44,125 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:40:44,126 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:40:47,697 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:40:51,031 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:40:51,032 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:40:51,033 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:40:51,034 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:40:52,539 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:40:52,540 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:40:52,542 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:40:52,543 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:40:55,725 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:40:55,726 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:40:55,727 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:40:55,728 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:40:57,668 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:41:01,650 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:41:01,651 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:41:01,652 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:41:01,654 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:41:02,652 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:41:02,653 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:41:02,653 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:41:02,655 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:41:03,208 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:41:04,749 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:41:04,750 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:41:04,750 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:41:04,752 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:41:07,091 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:41:07,670 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:41:07,671 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:41:07,671 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:41:07,672 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:41:09,229 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:41:11,236 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:41:11,879 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:41:14,609 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:41:14,610 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:41:14,611 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:41:14,612 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:41:16,035 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:41:16,038 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:41:16,039 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:41:16,041 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:41:16,450 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:41:17,330 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:41:18,644 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:41:18,645 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:41:18,646 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:41:18,647 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:41:18,699 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:41:18,701 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:41:18,703 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:41:18,705 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:41:19,750 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:41:20,732 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:41:20,733 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:41:20,735 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:41:20,736 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:41:21,462 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:41:21,463 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:41:21,463 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:41:21,464 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:41:25,451 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:41:26,939 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:41:28,570 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:41:28,571 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:41:28,572 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:41:28,573 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:41:30,248 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:41:32,006 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:41:32,007 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:41:32,008 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:41:32,009 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:41:33,238 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:41:33,681 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:41:34,842 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:41:38,332 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:41:39,670 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:41:42,420 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:41:42,438 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:41:42,439 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:41:42,440 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:41:42,441 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:41:44,188 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:41:44,188 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:41:44,189 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:41:44,191 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:41:44,729 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:41:50,388 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:41:51,152 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:41:51,153 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:41:51,154 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:41:51,155 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:41:53,605 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:41:53,606 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:41:53,607 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:41:53,609 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:41:54,562 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:41:56,845 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:42:01,489 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:42:05,345 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:42:05,345 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:42:05,346 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:42:05,347 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:42:08,123 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:42:10,386 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:42:10,387 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:42:10,388 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:42:10,389 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:42:15,641 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:42:15,642 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:42:15,642 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:42:15,644 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:42:19,939 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:42:26,886 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:42:26,887 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:42:26,887 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:42:26,889 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:42:28,821 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:42:36,271 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:42:36,273 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:42:36,274 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:42:36,275 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:42:41,168 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:42:41,168 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:42:41,170 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:42:41,172 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:42:47,078 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:42:50,242 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:42:50,243 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:42:50,244 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:42:50,245 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:42:54,695 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:42:54,695 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:42:54,696 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:42:54,698 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:42:56,390 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:42:56,391 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:42:56,393 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:42:56,394 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:43:01,575 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:43:04,085 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:43:07,660 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:43:12,212 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:43:12,214 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:43:12,214 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:43:12,215 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:43:15,963 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:43:15,964 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:43:15,966 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:43:15,968 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:43:17,526 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:43:19,885 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:43:19,887 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:43:19,888 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:43:19,889 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:43:24,885 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:43:24,886 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:43:24,887 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:43:24,887 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:43:28,683 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:43:30,335 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:43:33,032 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:43:37,010 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:43:37,011 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:43:37,013 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:43:37,015 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:43:39,060 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:43:43,402 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:43:43,403 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:43:43,404 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:43:43,405 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:43:50,026 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:43:54,850 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:43:54,851 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:43:54,852 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:43:54,854 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:43:59,061 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:43:59,061 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:43:59,063 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:43:59,064 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:44:05,339 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:44:05,341 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:44:05,341 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:44:05,342 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:44:11,125 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:44:15,255 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:44:21,364 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:44:23,607 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:44:26,799 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:44:26,800 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:44:26,801 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:44:26,802 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:44:29,043 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:44:34,170 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:44:38,099 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:44:38,100 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:44:38,100 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:44:38,102 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:44:43,085 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:44:49,829 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:44:55,361 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:44:55,362 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:44:55,363 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:44:55,366 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:45:02,378 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:45:05,240 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:45:06,919 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:45:09,192 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:45:09,193 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:45:09,194 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:45:09,195 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:45:11,940 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:45:11,941 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:45:11,942 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:45:11,943 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:45:18,820 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:45:18,821 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:45:18,821 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:45:18,824 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:45:23,941 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:45:23,942 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:45:23,943 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:45:23,944 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:45:26,558 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:45:29,602 - WARNING - Not Found: /houses/pagination/
+2024-04-21 23:45:33,722 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:45:33,723 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:45:33,724 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:45:33,726 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:45:40,302 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:45:44,685 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:45:49,916 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:45:49,917 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:45:49,919 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:45:49,921 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:45:55,113 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:46:02,850 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:46:02,852 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:46:02,853 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:46:02,855 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:46:07,990 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:46:12,782 - ERROR - Internal Server Error: /houses/pagination/
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Programacion\Proyectos\ideal\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Programacion\Proyectos\ideal\Idealista\house_app\views.py", line 120, in pagination_houses
+    grafic = generate_plot()
+             ^^^^^^^^^^^^^^^
+  File "D:\Programacion\Proyectos\ideal\Idealista\house_app\grafic.py", line 24, in generate_plot
+    list_houses = [house.serialize() for house in houses]
+                   ^^^^^^^^^^^^^^^^^
+  File "D:\Programacion\Proyectos\ideal\Idealista\db_app\data_base\model.py", line 199, in serialize
+    "predicted_price":self.predicted_price
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Programacion\Proyectos\ideal\env\Lib\site-packages\sqlalchemy\ext\hybrid.py", line 1120, in __get__
+    return self.fget(instance)
+           ^^^^^^^^^^^^^^^^^^^
+  File "D:\Programacion\Proyectos\ideal\Idealista\db_app\data_base\model.py", line 141, in predicted_price
+    price = round(latest_price.predicted_price,2)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: type NoneType doesn't define __round__ method
+2024-04-21 23:46:14,380 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:46:14,380 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:46:14,381 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:46:14,382 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:46:18,087 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:46:18,087 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:46:18,089 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:46:18,090 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:46:22,302 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:46:22,302 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:46:22,303 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:46:22,304 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:46:29,337 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:46:31,531 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:46:31,532 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:46:31,533 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:46:31,536 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:46:34,386 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:46:39,096 - ERROR -  (single_house_aux.py) Error extracting coordinates could not convert string to float: ''
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2024-04-21 23:46:45,379 - ERROR -  (single_house_aux.py) Error extracting coordinates list index out of range
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 104, in extract_coordinates
+    latitude = float(str(script).split('latitude')[1].split(',')[0].split()[1].replace("'",""))
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2024-04-21 23:46:45,380 - ERROR -  (single_house_aux.py) Error extracting basic caracts 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 124, in extract_basic_caracts
+    c1 = single_house_soup.find("section",{"id":"details"}).find("div",{"class":"details-property-feature-one"}).find_all("li")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'
+2024-04-21 23:46:45,381 - ERROR - 'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house_aux.py", line 145, in extract_location
+    location = [zone.text.strip() for zone in location.find_all('li')]
+                                              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2024-04-21 23:46:45,383 - ERROR - (single_house.py) Error creating return 'NoneType' object has no attribute 'find'
+Traceback (most recent call last):
+  File "D:\Programacion\Proyectos\ideal\Idealista\scrapping_app\scrapping\single_house.py", line 196, in parser_house_id
+    price = int(single_house_soup.find("div",{"class":"info-data"}).find("span",{"class":"info-data-price"}).text.replace(".","").replace("€",""))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find'

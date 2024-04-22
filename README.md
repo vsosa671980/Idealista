@@ -3,6 +3,8 @@
 ## Máster de Programación Avanzada en Python para Big Data, Hacking y Machine Learning (IX Edición).
 ### Trabajo Fin de Master
 
+![Portada](imgproject\portada.png)
+
 Ante la variación de los precios de venta y alquiler de inmuebles, y gracias a la existencia de portales inmobiliarios, podemos observar tendencias o aproximaciones de los precios de dichos inmuebles, que no llegan a ser más que conjeturas basadas en la observación, desde el punto de vista de un particular. En el caso de profesionales, parten de grandes bases de datos, y costosos estudios de mercado, que llevan en su mayoría un laborioso trabajo que implican grandes cantidades de dinero y tiempo.
 
 Debido a la abundancia de información disponible en diversas plataformas sobre propiedades, es factible utilizar estos datos para crear modelos de predicción que permitan estimar el valor de una propiedad en el mercado en función de sus características específicas.
@@ -17,15 +19,11 @@ Por tanto, la aplicación no solo contará con el modelo de predicción, si no q
 
 Al tratarse de un trabajo en grupo, utilizaremos una metodología Ágil para coordinar y repartir los trabajos, para que todos participemos de igual medida en la consecución de los objetivos marcados.
 
-
-## Autores ✒️
-* **Jaime Muñoz Fisac**
-* **Aliaksandr Iakhvedau Iakhvedau**
 * **Vicente Sosa Alcolea**
 
 ### Pre-requisitos 📋
 
-Se encuntran todos en el archivo _requirements.txt_
+Se encuentrasn todos en el archivo _requirements.txt
 
 ```
 pip install -r requirements.txt
@@ -35,3 +33,48 @@ pip install -r requirements.txt
 idealista_app/tfm/tfm/
 
 python manage.py runserver
+
+## Tecnologias usadas
+
+### Parte Web
+
+Python con Framwork Django en el servidor.
+
+Uso de Templates en la parte de la vista combinadas con Javascript.
+
+## Graficos
+
+Matplotlib
+
+## Machine Learning 
+
+Scki-learn
+
+## Scrapping 
+
+BeautifulSoup
+
+## Base de Datos 
+
+Relacional Sql-lite
+
+# Imagenes de la aplicacion
+### Pantalla Inicio
+
+![Portada](imgproject\Portada.png)
+
+### Descarga de datos 
+
+![Portada](imgproject\scrapping.png)
+
+### Carga de datos
+
+![Portada](imgproject\descarga.png)
+
+### Listado de Casas
+
+![Portada](imgproject\listado.png)
+
+### Grafico de desviacion precios predichos y precio real
+
+![Portada](imgproject\graficos.png)
